@@ -29,6 +29,6 @@ Where replacement_cost between 12.99 and 16.99;
 Select first_name, last_name from actor
 Where first_name in ('Penalope', 'Nick', 'Ed');
 
--- Film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99, 2.99, 4.99 ve replacement_cost 12.99, 15.99, 28.99 olma koşullarıyla sıralayınız. ( IN operatörünü kullanın)
+-- Film tablosunda bulunan tüm sütunlardaki verileri rental_rate 0.99, 2.99, 4.99 ve replacement_cost 12.99, 15.99, 28.99 olma koşullarıyla sıralayın. ( IN operatörünü kullanın)
 Select * from film
 Where rental_rate in ('0.99', '2.99', '4.99') and replacement_cost in ('12.99', '15.99', '28.99');
