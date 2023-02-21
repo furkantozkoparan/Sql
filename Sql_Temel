@@ -1,1 +1,11 @@
+-- Actor tablosunu getir.
+Select * from actor;
 
+-- Actor tablosundaki first_name ve last_name sütunlarındaki verileri sırala.
+Select first_name, last_name 
+from actor;
+
+-- Film tablosundaki title ve rental_rate sütünlarındaki verilerinden rental_rate 0.99 olanları sırala.
+Select title, rental_rate
+From film
+Where rental_rate = 0.99;
