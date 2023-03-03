@@ -17,3 +17,8 @@ group by country_id
 order by count desc
 limit 1;
 
+--Actor tablosunda bulunan first_name sütununa isim, last_name sütununa soyisim geçici isimlerini veriniz.
+Select first_name as ''isim'', last_name as ''soyisim'' from actor;
+
+--Actor tablosunda bulunan first_name ve last_name sütunlarındaki verieri birleştirin ve geçici isim olarak 'İsim Soyisim' veriniz.
+Select concat (first_name, ' ', last_name) as 'İsim Soyisim' from actor;
