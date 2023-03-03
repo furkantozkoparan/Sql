@@ -8,8 +8,8 @@ limit 5;
 Select * from film
 where title like '%n'
 order by lenght desc
-limit 10
-offset 5;
+offset 5
+limit 10;
 
 --Customer tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız.
 Select * from customer
