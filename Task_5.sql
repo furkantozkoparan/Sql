@@ -55,16 +55,15 @@ values
 	('Chandler Campa', '1999-08-12', 'ccampa1b@ow.ly'),
 	('Sherri Dionisi', '1998-05-05', 'sdionisi1c@seesaa.net');
   
-  --Sütunların her birine göre diğer sütunları güncelleme UPDATE işlemi yapalım.
-  Update employee
-  set name = 'Furkan Tozkoparan'
-  birthday = '2000-11-02'
-  where id = 25
-  returning *;
+--Sütunların her birine göre diğer sütunları güncelleme UPDATE işlemi yapalım.
+Update employee
+set name = 'Furkan Tozkoparan'
+birthday = '2000-11-02'
+where id = 25
+returning *;
   
-  --Sütunların her birine göre ilgili satırı silecek DELETE işlemi yapalım.
-  Delete from employee
-  where id = 8
-  returning -*;
-  
+--Sütunların her birine göre ilgili satırı silecek DELETE işlemi yapalım.
+Delete from employee  
+where id = 8
+returning -*;
   
