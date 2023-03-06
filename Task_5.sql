@@ -66,4 +66,3 @@ returning *;
 Delete from employee  
 where id = 8
 returning -*;
-  
