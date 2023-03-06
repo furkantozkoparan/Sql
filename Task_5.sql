@@ -57,7 +57,7 @@ values
   
 --Sütunların her birine göre diğer sütunları güncelleme UPDATE işlemi yapalım.
 Update employee
-set name = 'Furkan Tozkoparan'
+set name = 'Furkan Tozkoparan',
 birthday = '2000-11-02'
 where id = 25
 returning *;
