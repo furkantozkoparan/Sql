@@ -65,4 +65,4 @@ returning *;
 --Sütunların her birine göre ilgili satırı silecek DELETE işlemi yapalım.
 Delete from employee  
 where id = 8
-returning -*;
+returning *;
