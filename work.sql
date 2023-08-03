@@ -36,23 +36,3 @@ ADD COLUMN middle_point geometry(Point, 4326);
 --içerecektir.
 UPDATE target_table_name
 SET middle_point = ST_Centroid(geom);
-
-
-
-
-
-
-
-
-
--- Yeni bir tablo oluşturun (Eğer henüz yoksa)
-CREATE TABLE sultangazi_selected_yapi AS
-SELECT *
-FROM sultangazi_yapi
-WHERE ST_Within(coordinates, (SELECT geometry FROM sultangazi WHERE city_name = 'Sultangazi'));
-
--- İlgili tabloya verileri kopyalayın
-INSERT INTO sultangazi_selected_yapi
-SELECT *
-FROM sultangazi_yapi
-WHERE ST_Within(coordinates, (SELECT geometry FROM sultangazi WHERE city_name = 'Sultangazi'));
